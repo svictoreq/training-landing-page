@@ -224,9 +224,14 @@ header {
 	border-radius: 50%;
 	background-color: var(--white);
 }
+
  /* Main */
 main {
-	 padding: 5vh 10vh;
+	 padding: 0 10vh;
+ }
+
+ section {
+ 	margin: 7vh 0;
  }
 
 section#introduction {
@@ -288,4 +293,39 @@ section#introduction {
 
 .course figcaption {
 	text-align: justify;
+}
+
+/* About Us */
+.about-upcoming-wrapper {
+	display: flex;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+.about-upcoming-wrapper section h2 {
+	margin-top: 0;
+}
+
+.about-upcoming-wrapper section#about {
+	width: 65%;
+}
+
+.about-upcoming-wrapper section#upcoming-courses {
+	width: 30%;
+}
+
+.about-upcoming-wrapper section#upcoming-courses ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.up-course {
+	padding: 1% 0;
+	border-bottom: 1px dashed var(--translucent-black);
+	text-indent: 0.7rem;
+}
+
+.up-course:first-child {
+	border-top: 1px dashed var(--translucent-black);
 }
