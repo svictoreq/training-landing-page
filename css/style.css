@@ -110,3 +110,114 @@ nav .logo-container {
 	background: linear-gradient(to top left, var(--blue), var(--violet));
 	-webkit-text-fill-color: var(--white);
 }
+
+/* Header and Slider */
+header {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.slider {
+	position: relative;
+}
+
+.slide-wrapper {
+	position: relative;
+	height: 95vh;
+}
+
+.slide-selector {
+	display: flex;
+	justify-content: flex-end;
+	height: 5vh;
+}
+
+.slide-cover {
+	height: 95vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	z-index: 1;
+}
+
+.slide-cover h1, .slide-cover h3 {
+	text-align: center;
+	color: var(--white);
+	text-shadow: 0px 1px 5px rgba(150, 150, 150, 0.5);
+}
+
+.slide-wrapper::after {
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 95vh;
+	width: 100%;
+	content: '';
+	background: linear-gradient(to top left, var(--light-blue), var(--light-violet));
+	opacity: 0.5;
+}
+
+.slide {
+	display: none;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.slide#slide-0 {
+	background: url('../img/slides/img0.jpg');
+	background-size: cover;
+}
+
+.slide#slide-1 {
+	background: url('../img/slides/img1.jpg');
+	background-size: cover
+}
+
+.slide#slide-2 {
+	background: url('../img/slides/img2.jpg');
+	background-size: cover
+}
+
+.slide.active {
+	display: block;
+}
+
+.slide-selector input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	height: 1.2rem;
+	width: 1.2rem;
+	background: var(--light-violet);
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+}
+
+.slide-selector input:checked {
+	background: var(--light-blue);
+	position: relative;
+	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(200,200,200,0.5);
+	-moz-box-shadow: inset 0px 0px 3px 1px rgba(200,200,200,0.5);
+	box-shadow: inset 0px 0px 3px 1px rgba(200,200,200,0.5);
+}
+
+.slide-selector input:checked::after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 33%;
+	left: 33%;
+	height: 33%;
+	width: 33%;
+	border-radius: 50%;
+	background-color: var(--white);
+}
