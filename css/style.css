@@ -6,6 +6,7 @@
 	--light-violet: #E6ABFF;
 	--white: #F8F8FF;
 	--translucent-white: #F8F8FFCC;
+	--translucent-black: #27272722;
 }
 
 .ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
@@ -131,7 +132,9 @@ header {
 .slide-selector {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	height: 5vh;
+
 }
 
 .slide-cover {
@@ -220,4 +223,43 @@ header {
 	width: 33%;
 	border-radius: 50%;
 	background-color: var(--white);
+}
+ /* Main */
+main {
+	 padding: 5vh 10vh;
+ }
+
+section#introduction {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.introduction-item {
+	width: 25%;
+	background: #FFFFFF;
+	margin: 1vw;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 1px rgba(200, 200, 200, 0.1);
+	padding: 3%;
+}
+
+.introduction-item figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+}
+
+.introduction-item figure img {
+	width: 70%;
+	height: 20vh;
+}
+
+.introduction-item figure figcaption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
 }
