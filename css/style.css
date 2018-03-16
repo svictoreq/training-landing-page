@@ -538,3 +538,32 @@ footer #social-media a {
 		-webkit-text-fill-color: var(--blue);
 	}
 }
+
+/* Phone */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	/* Phone General */
+	button, input {
+		cursor: default !important;
+	}
+
+	/* Phone Nav */
+	nav {
+		min-height: 5rem;
+		height: auto;
+		max-height: 20vh;
+	}
+
+	nav .logo-container {
+		width: 50vw;
+		max-width: 10rem;
+	}
+
+	nav .menu-button {
+		display: block;
+		max-width: 2.6rem;
+	}
+
+	nav .nav-list {
+		display: none;
+	}
+}
