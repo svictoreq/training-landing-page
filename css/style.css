@@ -504,4 +504,22 @@ footer #social-media a {
 	.about-upcoming-wrapper section#upcoming-courses {
 		width: 100%;
 	}
+
+	/* Tablet Footer */
+	footer {
+		font-size: 0.9rem;
+	}
+
+	#footer-nav {
+		-webkit-text-fill-color: var(--blue) !important;
+	}
+
+	#footer-nav li {
+		width: auto;
+		padding: 0 0.6rem;
+	}
+
+	#footer-nav li a {
+		-webkit-text-fill-color: var(--blue);
+	}
 }
