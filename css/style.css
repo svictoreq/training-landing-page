@@ -416,7 +416,7 @@ footer #social-media a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	height: 2rem;
+	min-height: 2rem;
 	padding: 1% 7vw;
 	display: flex;
 	color: var(--white);
@@ -547,7 +547,7 @@ footer #social-media a {
 	}
 
 	/* Phone Nav */
-	nav {
+	nav:not(#footer-nav) {
 		min-height: 5rem;
 		height: auto;
 		max-height: 20vh;
@@ -577,7 +577,7 @@ footer #social-media a {
 		width: 1.6rem;
 	}
 
-	/* Phone Main*/
+	/* Phone Main */
 	section#introduction, section#courses .courses-wrapper, .about-upcoming-wrapper {
 		flex-direction: column;
 	}
@@ -608,5 +608,58 @@ footer #social-media a {
 
 	.up-course {
 		padding: 5% 0;
+	}
+
+	/* Phone Footer */
+	footer, footer #summary {
+		flex-direction: column;
+	}
+
+	#summary .summary-item {
+		width: 100%;
+	}
+
+	footer #social-media {
+		min-height: 5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	footer #social-media a {
+		height: 3rem;
+		width: 3rem;
+		padding: 0.5rem;
+		cursor: default;
+	}
+
+	footer #social-media a:active {
+		background-color: var(--translucent-white);
+	}
+
+	#footer-nav {
+		flex-direction: column;
+		height: auto;
+	}
+
+	#footer-nav ul {
+		width: 100%;
+		margin: 0;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 1%;
+	}
+
+	#footer-nav ul li {
+		width: 30% !important;
+		padding: 2% 0 !important;
+		display: flex;
+		justify-content: center;
+	}
+
+	#footer-nav #copyright {
+		width: 100%;
+		text-align: center;
+		padding: 3% 0;
+		border-top: 1px solid var(--translucent-black);
 	}
 }
