@@ -1,4 +1,25 @@
 $(document).ready(function() {
+	// Navbar code
+	const navItems = [...$('.nav-item')];
+	navItems.forEach(item => {
+		$(item).on('click', function() {
+			navItems.forEach(nItem => $(nItem).removeClass('active'))
+			$(item).addClass('active');
+		});
+	})
+
+	// Mobile Navbar code
+	$('button.menu-button').on('click', function() {
+		$('.nav-list').toggleClass('opened');
+		if ($('.nav-list').hasClass('opened')) {
+			$(this).find('img').prop('src', 'img/menu-up.svg');
+		} else {
+			$(this).find('img').prop('src', 'img/menu-down.svg');
+		}
+	});
+
+
+	// Slider code
 	const slideSelector = [...$('.slide-selector').find('input')];
 	let i = $('.slide.active').data('index');
 

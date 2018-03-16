@@ -416,7 +416,7 @@ footer #social-media a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	min-height: 2rem;
+	height: 2rem;
 	padding: 1% 7vw;
 	display: flex;
 	color: var(--white);
@@ -551,6 +551,7 @@ footer #social-media a {
 		min-height: 5rem;
 		height: auto;
 		max-height: 20vh;
+		position: relative;
 	}
 
 	nav .logo-container {
@@ -564,7 +565,41 @@ footer #social-media a {
 	}
 
 	nav .nav-list {
-		display: none;
+		overflow: hidden;
+		height: 0;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: absolute;
+		top: 5rem;
+		left: 0;
+		background: #FFFFFF;
+		-webkit-text-fill-color: #FFFFFF;
+		z-index: 2;
+		transition: 0.3s ease;
+	}
+
+	nav .nav-list.opened {
+		height: 80vh;
+		-webkit-text-fill-color: var(--blue);
+	}
+
+	nav .nav-list .nav-item {
+		font-size: 1.1rem;
+		border-bottom: ;
+	}
+
+	nav .nav-list .nav-item:hover {
+		width: 100%;
+	}
+
+	nav .nav-list.opened .nav-item.active {
+		-webkit-text-fill-color: var(--blue);
+	}
+
+	nav .nav-list .nav-item.active {
+		background: #FFFFFF;
+		-webkit-text-fill-color: #FFFFFF;
 	}
 
 	/* Phone Header */
