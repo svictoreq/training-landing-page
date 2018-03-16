@@ -567,7 +567,7 @@ footer #social-media a {
 		display: none;
 	}
 
-	/* Header */
+	/* Phone Header */
 	.slide-selector {
 		height: 3rem;
 	}
@@ -575,5 +575,38 @@ footer #social-media a {
 	.slide-selector input {
 		height: 1.6rem;
 		width: 1.6rem;
+	}
+
+	/* Phone Main*/
+	section#introduction, section#courses .courses-wrapper, .about-upcoming-wrapper {
+		flex-direction: column;
+	}
+
+	section#introduction .introduction-item {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 5% 0;
+		padding: 10% 5%;
+	}
+
+	.courses-wrapper .course {
+		width: 100%;
+	}
+
+	.about-upcoming-wrapper section {
+		width: 100% !important;
+		margin: 3vh 0;
+	}
+
+	.about-upcoming-wrapper section#about {
+		margin-top: 0;
+	}
+
+	.about-upcoming-wrapper section#upcoming-courses {
+		margin-bottom: 7vh;
+	}
+
+	.up-course {
+		padding: 5% 0;
 	}
 }
