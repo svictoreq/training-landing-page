@@ -26,8 +26,6 @@ $(document).ready(function() {
 		})
 	}
 
-	$('.slide-cover').on('click', next);
-
 	// Slider Interval
 	let carousel = window.setInterval(next, 5000);
 

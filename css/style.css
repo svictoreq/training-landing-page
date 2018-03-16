@@ -180,6 +180,7 @@ header {
 	position: relative;
 	height: 100%;
 	width: 100%;
+	background-position: center !important;
 }
 
 .slide#slide-0 {
