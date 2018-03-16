@@ -7,6 +7,8 @@ El sitio tiene la misma estructura que el sitio original, fue modificado el aspe
 ## Descripción técnica
 El sitio se contruyó con Flexbox, la paleta de colores fue creada con variables de CSS. Las imágenes mantienen una relación de aspecto de 4:3. Los íconos (en formato SVG, para mantener responsividad) utilizados a lo largo del sitio tienen la misma base de diseño.
 
+El header del sitio fue creado en su totalidad con jQuery. Las animaciones del menú de la barra de navegación móvil fueron creadas con CSS por mayor comodidad.
+
 ## Tiempo de contrucción
 El tiempo de construcción del sitio (sin tomar en cuenta el primer sitio), fue de aproximadamente 20 horas en total (tomando en cuenta el tiempo de diseño de íconos, y búsqueda y edición de imágenes).
 
