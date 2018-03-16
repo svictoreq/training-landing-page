@@ -566,4 +566,14 @@ footer #social-media a {
 	nav .nav-list {
 		display: none;
 	}
+
+	/* Header */
+	.slide-selector {
+		height: 3rem;
+	}
+
+	.slide-selector input {
+		height: 1.6rem;
+		width: 1.6rem;
+	}
 }
