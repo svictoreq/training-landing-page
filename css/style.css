@@ -470,17 +470,18 @@ footer #social-media a {
 		width: auto;
 		padding: 0 0.3rem;
 		margin: 0;
+		height: 35%;
 		-webkit-text-fill-color: var(--blue);
 	}
 
 	/* Tablet Header */
 	.slide-selector {
-		height: 10vh;
+		height: 6vh;
 	}
 
 	.slide-selector input {
-		height: 5vh;
-		width: 5vh;
+		height: 4vh;
+		width: 4vh;
 	}
 
 	/* Tablet Main */
@@ -509,6 +510,19 @@ footer #social-media a {
 	/* Tablet Footer */
 	footer {
 		font-size: 0.9rem;
+	}
+
+	footer #summary {
+		min-height: auto;
+	}
+
+	footer #social-media {
+		height: 3.5rem;
+	}
+
+	footer #social-media a {
+		width: 3.5rem;
+		padding: 0.5rem;
 	}
 
 	#footer-nav {
