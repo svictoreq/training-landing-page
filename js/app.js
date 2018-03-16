@@ -14,5 +14,4 @@ $(document).ready(function() {
 		})
 	}
 	$('.slider').on('click', next);
-	console.log(slideSelector)
 });
