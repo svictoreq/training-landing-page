@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$('a[href="#"').on('click', function(e) {
+		e.preventDefault();
+	})
+
 	// Navbar code
 	const navItems = [...$('.nav-item')];
 	navItems.forEach(item => {

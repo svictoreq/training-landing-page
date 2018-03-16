@@ -38,13 +38,6 @@ img {
 	width: 100%;
 }
 
-a[href=""] {
-	color: var(--light-blue);
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 600;
-}
-
 /* Navbar */
 nav {
 	display: flex;
@@ -107,9 +100,17 @@ nav .logo-container {
 	font-weight: 600;
 }
 
+.nav-item a:visited {
+	-webkit-text-fill-color: transparent;
+}
+
 .nav-item:hover, .nav-item.active {
 	background: -webkit-linear-gradient(bottom right, var(--blue), var(--violet));
 	background: linear-gradient(to top left, var(--blue), var(--violet));
+	-webkit-text-fill-color: var(--white);
+}
+
+.nav-item:hover a, .nav-item.active {
 	-webkit-text-fill-color: var(--white);
 }
 
@@ -262,6 +263,13 @@ section#introduction {
 	padding: 3%;
 }
 
+.introduction-item a {
+	color: var(--light-blue);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+}
+
 .introduction-item figure {
 	display: flex;
 	flex-direction: column;
@@ -319,6 +327,13 @@ section#introduction {
 
 .about-upcoming-wrapper section#about {
 	width: 65%;
+}
+
+.about-upcoming-wrapper section#about a {
+	color: var(--light-blue);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
 }
 
 .about-upcoming-wrapper section#upcoming-courses {
@@ -474,6 +489,14 @@ footer #social-media a {
 		-webkit-text-fill-color: var(--blue);
 	}
 
+	nav .nav-item a, nav .nav-item a:visited {
+		-webkit-text-fill-color: var(--blue);
+	}
+
+	nav .nav-item:hover a, nav .nav-item.active a {
+		-webkit-text-fill-color: var(--white);
+	}
+
 	/* Tablet Header */
 	.slide-selector {
 		height: 6vh;
@@ -586,20 +609,29 @@ footer #social-media a {
 
 	nav .nav-list .nav-item {
 		font-size: 1.1rem;
-		border-bottom: ;
+		border-bottom: 1px solid var(--translucent-black);
+		width: 100%;
 	}
 
-	nav .nav-list .nav-item:hover {
-		width: 100%;
+	nav .nav-list .nav-item:first-child {
+		border-top: 1px solid var(--translucent-black);
+	}
+
+	nav .nav-list .nav-item a {
+		-webkit-text-fill-color: var(--white);
+	}
+
+	nav .nav-list.opened .nav-item a {
+		-webkit-text-fill-color: var(--blue);
 	}
 
 	nav .nav-list.opened .nav-item.active {
 		-webkit-text-fill-color: var(--blue);
 	}
 
-	nav .nav-list .nav-item.active {
+	nav .nav-list .nav-item.active, .nav-item:hover {
 		background: #FFFFFF;
-		-webkit-text-fill-color: #FFFFFF;
+		-webkit-text-fill-color: var(--blue)
 	}
 
 	/* Phone Header */
