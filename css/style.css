@@ -51,7 +51,7 @@ nav {
 	align-items: center;
 	height: 12vh;
 	background: #FFFFFF;
-	padding: 0 10vw;
+	padding: 0 7vw;
 }
 
 nav .logo-container {
@@ -227,7 +227,7 @@ header {
 
  /* Main */
 main {
-	 padding: 0 10vh;
+	 padding: 0 7vw;
  }
 
  section {
@@ -323,9 +323,116 @@ section#introduction {
 .up-course {
 	padding: 1% 0;
 	border-bottom: 1px dashed var(--translucent-black);
-	text-indent: 0.7rem;
 }
 
 .up-course:first-child {
 	border-top: 1px dashed var(--translucent-black);
+}
+
+/* Footer */
+footer {
+	padding: 3% 7vw;
+	padding-bottom: 1%;
+	overflow: hidden;
+	background: linear-gradient(to bottom right, var(--blue), var(--violet));
+}
+
+footer #summary {
+	display: flex;
+	height: 35vh;
+}
+
+.summary-item {
+	width: 25%;
+}
+
+.summary-item h3{
+	color: var(--white);
+}
+
+.summary-item i {
+	margin-right: 0.3rem;
+}
+
+.summary-item ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.summary-item li {
+	padding: 0.5rem 0;
+}
+
+.summary-item li a {
+	display: flex;
+	align-items: center;
+	color: var(--translucent-white);
+	font-weight: 400;
+	font-size: 1rem;
+	text-transform: initial;
+	text-decoration: none;
+}
+
+.summary-item:last-child li {
+	padding: 0.25rem 0;
+}
+
+.summary-item:last-child p {
+	margin: 0.5rem 0;
+	color: var(--light-violet);
+}
+
+footer #social-media {
+	height: 7vh;
+	display: flex;
+	justify-content: center;
+}
+
+footer #social-media a {
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	width: 7vh;
+	padding: 1%;
+	border-radius: 50%;
+	margin: 0 0.3rem;
+}
+
+#footer-nav {
+	background: linear-gradient(to bottom, var(--blue), var(--violet));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	height: 2rem;
+	padding: 1% 7vw;
+	display: flex;
+	color: var(--white);
+}
+
+#footer-nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-right: auto;
+}
+
+#footer-nav li {
+	width: 6vw;
+	text-align: center;
+	border-right: 1px solid var(--translucent-white);
+	font-size: 0.9rem;
+}
+
+#footer-nav li:first-child {
+	padding-left: 0;
+	width: 4vw;
+	text-align: left;
+}
+
+#footer-nav li a {
+	color: var(--white);
+	text-transform: initial;
+	font-weight: 400;
+	font-size: 0.9rem;
 }
